@@ -1,0 +1,273 @@
+
+body{
+	height: 100vh;
+	min-width: 400px;
+	max-width: 700px;
+	overflow: hidden;
+	
+}
+
+.message-header {
+	width: 100%;
+	align-items: center;
+display: flex;
+
+margin-bottom: 8px;
+}
+.message-header span{
+	margin-left: 10px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	vertical-align:middle;
+}
+.icon {
+margin-right: 8px;
+}
+.user-icon-container{
+	margin-top: 5px;
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.viki-icon-container{
+	margin-top: 5px;
+	width: 35px;
+	height: 35px;
+}
+
+.viki-icon-container svg {
+	width: 100%;
+	height: 35px;
+  }
+
+.user-icon-container .user{
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+  .hljs {
+	text-align: left !important;
+		background-color: black; /* Change to desired background color */
+	  
+  }
+
+  .btns{
+	display: flex;
+	flex-wrap: wrap;
+	min-width: 400px;
+	max-width: 700px;
+	
+  }
+  .btn{
+	flex: 1 1 auto;
+	height: 10%;
+	width: 100px;
+	margin: 10px;
+	margin-left: 16;
+	background-color: green;
+	text-align: center;
+	border-radius: 5px;
+	margin-left:0 ;
+}
+
+.suggest-prompt{
+	color: blue;
+	height: 20px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-left: 6px;
+}
+
+.suggest-prompt span{
+	width: 4px;
+}
+
+
+
+.chat-input {
+	display: flex;
+	align-items: center;
+	position: fixed;  
+	bottom: 0;
+	min-width: 400px;
+	max-width: 700px;
+	background-color: black;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	padding: 5px;
+	width: 90%;
+	border-radius: 8px;
+	margin-right: 10px;
+	
+  }
+
+  .chat-container{
+	height: 86%;
+	margin-bottom: 100px;
+	padding-bottom: 50px;
+	overflow-y: scroll;
+	padding-right: 20px;
+  }
+
+  .start-chat-container{
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+  }
+
+  .start-chat-container img{
+	height: 80px;
+	width: 80px;
+  }
+
+  .start-chat-container h2{
+	font-size: 14px;
+	color: gray;
+  }
+
+  .start-chat-container div{
+	height: 20%;
+	width: auto;
+  }
+
+  .chat-input textarea {
+	border: none;
+	outline: none;
+	background-color: transparent;
+	resize: none;
+	color: white;
+	font-size: 12px;
+	padding: 4px;
+	padding-top: 8px;
+	box-sizing: border-box;
+	width: 90%;
+	vertical-align: center;
+	
+  }
+
+  .suggest-prompt img{
+	height: 15px;
+  }
+  .chat-input img{
+	height: 20px;
+  }
+
+  .chat-input .send-icon {
+	margin-left: 10px;
+	margin-right: 10px;
+	cursor: pointer;
+  }
+
+  pre{
+	width: 100%;
+	height: auto;
+	white-space: pre-line;
+	padding-left:10px ;
+	position: relative;
+	box-sizing: border-box;
+  }
+
+  pre code{
+	text-align: left;
+	margin-left: 20px;
+  }
+
+  pre code > span {
+	width: 10px;
+  }
+
+  pre > div{
+	height: 40px;
+	width: 100%;
+	background-color: black;
+	transform: translateX(-20px);
+	position: absolute;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	top: 0;
+  }
+
+  pre > div > p{
+	padding-left: 10px;
+  }
+  pre > div > div {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	position: absolute;
+	right: 10px;
+	transform: translateY(-30%);
+	width: 140px;
+	height: 40px;
+	
+  }
+pre > div > div > div{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	vertical-align: center;
+	padding: 0;
+	text-align: center;
+}
+
+.tool{
+	color: green;
+}
+.chat-error{
+	width:96%;
+	border: 1px solid white;
+	border-radius: 10px;
+	height:20px;
+	color:white;
+	padding: 10px;
+	background-color: #ff6961;
+}
+
+.loader {
+	margin: 10px;
+	border: 2px solid #f3f3f3; /* Light grey */
+	border-top: 2px solid #3498db; /* Blue */
+	border-radius: 50%;
+	width:10px;
+	height: 10px;
+	animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+  }
+
+  button {
+	margin-top: 20px;
+	padding: 10px 20px;
+	font-size: 12px;
+	background-color:#78E490;
+	border-radius:5px;
+	border:none;
+	display:flex;
+	flex-direction:row;
+	align-items:center;
+	justify-content:center;
+}
+.git-logo{
+	width:20px;
+	height:20px;
+	margin-right:10px;
+}
+
+.quick-controls {
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+}

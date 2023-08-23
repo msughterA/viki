@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat View</title>
+  <style>
+    :root {
+      /* Access the theme-specific CSS variables */
+      --vscode-background: ${getThemeColor('editor.background')};
+      --vscode-foreground: ${getThemeColor('editor.foreground')};
+      --vscode-selection: ${getThemeColor('editor.selectionBackground')};
+    }
+
+    body {
+      background-color: var(--vscode-background);
+      color: var(--vscode-foreground);
+    }
+
+    /* Apply the theme-specific colors to elements as needed */
+    .message {
+      background-color: var(--vscode-selection);
+    }
+  </style>
+</head>
+<body>
+  <h1>Chat View</h1>
+  <ul id="chatList">
+    <li class="message">Hello, world!</li>
+  </ul>
+
+  <script>
+    // Access the theme-specific CSS variables
+    function getThemeColor(themeColor) {
+      return getComputedStyle(document.documentElement).getPropertyValue(`--${themeColor}`);
+    }
+
+    // Communicate with the extension
+    const vscode = acquireVsCodeApi();
+
+    // Receive messages from the extension
+    window.addEventListener('message', event => {
+      const message = event.data;
+      // Handle the received message
+    });
+  </script>
+</body>
+</html>
